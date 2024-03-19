@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de filtrado avanzado</title>
+</head>
+<body>
+    <h1>Filtrar Datos</h1>
+    <label for="category">Categoría:</label>
+    <select id="category">
+        <option value="categoria1">Categoría 1</option>
+        <option value="categoria2">Categoría 2</option>
+        <option value="categoria3">Categoría 3</option>
+    </select>
+    <label for="minPrice">Precio mínimo:</label>
+    <input type="number" id="minPrice" min="0">
+    <label for="maxPrice">Precio máximo:</label>
+    <input type="number" id="maxPrice" min="0">
+    <button onclick="filter()">Aplicar Filtro</button>
+
+    <div id="filteredResults">
+        <!-- Aquí se mostrarán los resultados filtrados -->
+    </div>
+
+    <script src="filter.js"></script>
+</body>
+</html>
